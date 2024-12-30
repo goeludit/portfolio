@@ -59,7 +59,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-banner{ margin-bottom: 8.125rem; padding-top:8.125rem}
 .ds-banner-hed{ margin-top: 100px; font-size: 40px; line-height:3rem;}
 .ds-image-shadow{box-shadow:30px 30px #e4c22b;}
-.ds-banner img {height: 70%; max-width: 30vw;}
+.ds-banner img { max-width: 30vw;}
 /* .intro-banner { display: flex; align-items: center;} */
 
 .ds-social{ list-style: none; display: flex; align-items: center;margin-top: 2.5rem }
