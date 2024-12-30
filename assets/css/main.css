@@ -1,0 +1,620 @@
+/*
+Theme Name: Borstein
+
+  1. >>> Headr Style
+  2. >>> Banner Style
+  3. >>> Resume Style
+  4. >>> Project Style
+  5. >>> Testimonials Style
+  6. >>> Email Style
+  7. >>> Footer Style
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------*/
+:root {
+	--font_14:0.875rem;
+	--font_16:1rem;
+	--font_30:1.875rem;
+	--font_36:2.25rem;
+	--font_48:3rem;
+	--40:2.5rem;
+	--30:1.875rem;
+	--margin_30:1.875rem;
+	--margin-54:3.375rem;
+	--margin-60:3.75rem;
+	--margin-100:6.25rem;
+	--margin-120:7.5rem;   
+}
+html {font-family: 'Poppins', sans-serif;background-color:#2A2A2A;   scroll-behavior: smooth; scroll-padding-top: 50px}
+body {font-family: 'Poppins', sans-serif;overflow-x: hidden; background-color:#2A2A2A; font-weight:400;font-style: normal; color: #FFF; font-size: var(--font_14)}
+a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
+a{color: #000}
+iframe {border: 0;outline: none;}
+::-moz-selection {background: var(--red);text-shadow: none;color:var(--white)}
+::selection {background:var(--red);text-shadow: none;color:var(--white)}
+img {max-width: 100%;border: none;outline: none;height: auto;}
+input,textarea {border-radius: 0;resize: none;}
+ul {padding: 0;margin: 0;}
+@font-face {
+font-family: 'DM Serif Display', serif;
+font-family: 'Poppins', sans-serif;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {background-color: transparent;background-image: none;color:#000;}
+/* 1.2 Typography */
+h1,h2,h3,h4,h5,h6 {font-family: 'DM Serif Display', serif;}
+figure{ margin: 0 }
+svg,img { max-width: 100%; height: auto; }
+
+/*-----------------------------------------------------------------
+  1. >>> Headr Style
+----------------------------------------------------------------*/
+.ds-header{ padding-top:2.5rem; padding-bottom: 7.8125rem; position: relative;  }
+.ds-logo a{ display: inline-block; background-color: #e4c22b; font-weight: 600; font-size: 1.125rem; padding: 0  0.4375rem; color: #000}
+.ds-logo a:hover
+.ds-logo a:focus{color: #bb2e2e}
+/*-----------------------------------------------------------------
+  2. >>> Banner Style
+----------------------------------------------------------------*/
+.ds-banner{ margin-bottom: 8.125rem; padding-top:8.125rem}
+.ds-banner-hed{ margin-top: 100px; font-size: 40px; line-height:3rem;}
+.ds-image-shadow{box-shadow:30px 30px #e4c22b;}
+.ds-banner img {height: 70%;}
+/* .intro-banner { display: flex; align-items: center;} */
+
+.ds-social{ list-style: none; display: flex; align-items: center;margin-top: 2.5rem }
+.ds-social li{ margin-right: 15px }
+.ds-social li:alst-child{ margin-right: 0 }
+.ds-social a{ width: 30px; height: 30px; background-color: #e4c22b; border-radius: 100%; text-align: center; display: flex; justify-content: center; align-items: center; font-size:1.25rem; color:#2A2A2A }
+.ds-social li:hover a{background-color: #e4c22b; color:#000 }
+
+.ds-banner figure{width: 370px; position: relative;}
+.ds-banner figure figcaption{ color: #FFF; font-size:1.875rem; position: absolute; bottom: 0; width: 100%; text-align: center; padding-bottom:2.5rem  }
+/*-----------------------------------------------------------------
+  3. >>> Resume Style
+----------------------------------------------------------------*/
+.ds-resume-section{ background-color: #000; padding: 7.5rem 0 }
+.ds-resume-section h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0 }
+.ds-resume-section p{ color:#9C9C9C; font-size: 1rem; line-height: 1.875rem }
+.ds-download-button{ display: inline-block; color: #e4c22b; border: 1px solid #e4c22b; letter-spacing: 3px; text-transform: uppercase; font-size: 0.75rem; padding:0.875rem 1.25rem; margin-top: 30px  }
+.ds-download-button i{ font-size:1.125rem; vertical-align: middle;  }
+.ds-download-button:hover{ color: #000; background-color:#e4c22b  }
+/*-----------------------------------------------------------------
+  4. >>> Projects Style
+----------------------------------------------------------------*/
+.ds-projects-section{padding: 3.5rem 0; background-color: #000;}
+.ds-projects-section h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width:40%;margin: 0}
+.all-projects-button    { display: flex; justify-content: center; align-items: center;	}
+.project-img:hover .ri-arrow-right-up-line { opacity: 1;} 
+.project-img .ri-arrow-right-up-line { opacity: 0}
+.pr-download-button{ display: inline-block; color: #e4c22b; border: 1px solid #e4c22b; letter-spacing: 3px; text-transform: uppercase; font-size: 0.75rem; padding:0.875rem 1.25rem; margin-top: 30px  }
+.pr-download-button:hover{ color: #000; background-color:#e4c22b  }
+.ds-projects-section span{ display: block; font-family: 'Poppins', sans-serif; text-transform: uppercase; color: #CBFE00; font-weight: 600; letter-spacing: 3px; font-size: 0.75rem; margin-bottom: 0.625rem}
+
+/*-----------------------------------------------------------------
+  5. >>> Testimonials Style
+----------------------------------------------------------------*/
+.ds-testimonials-section{ background-color: #2A2A2A;padding: 7.5rem 0 }
+.ds-testimonials-section h2 span{ display: block; font-family: 'Poppins', sans-serif; text-transform: uppercase; color: #e4c22b; font-weight: 600; letter-spacing: 3px; font-size: 0.75rem; margin-bottom:2.5rem}
+
+.ds-testimonials-loop article{ color: #9C9C9C; font-size: 2rem; line-height: 2.8125rem }
+.ds-testimonials-loop section{ margin-top: 3.75rem }
+.ds-testimonials-loop section span{ display: block; font-size: 1rem; line-height: 1.375rem }
+.ds-testimonials-loop section span.ds-name{ font-weight: 600 }
+.ds-testimonials-slider .slick-arrow{ display: inline-block; outline: none; cursor: pointer; font-size:1.5rem; line-height:3.75rem; text-align: center;  border: 1px solid #575757; padding: 0; width: 3.75rem; height: 3.75rem; border-radius: 100%; background-color:#000; color: #575757; position: absolute; bottom: 0; right: 0; z-index: 2 }
+.ds-testimonials-slider .slick-arrow:hover{ color: #e4c22b; border-color: #e4c22b }
+.ds-testimonials-slider .slick-arrow.slick-prev{ right: 4.375rem }
+/*-----------------------------------------------------------------
+  6. >>> Email Style
+----------------------------------------------------------------*/
+.ds-email-section{padding: 7.5rem 0; background-color: #e4c22b; text-align: center;}
+.ds-email-section h2{ font-size: 3.75rem;color: #000; margin-bottom: 1.875rem }
+.ds-email-section a{ font-size:1.25rem; font-weight: 500; text-decoration: underline;  }
+.ds-email-section a:hover{ color: #000; text-decoration: none; }
+/*-----------------------------------------------------------------
+  7. >>> Footer Style
+----------------------------------------------------------------*/
+.ds-footer{ padding: 2.5rem 0; text-align: center; color: #CECECE; font-size: 1.25rem }
+.ds-footer a{color: #CECECE }
+.ds-footer a:hover{color: #CECECE; text-decoration: underline; }
+/*-------------------------------------------------------------------------------
+ XS Style @media (max-width: 767px) 
+-------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+	.ds-header {padding-top: 2.5rem;padding-bottom:2.5rem;}
+	.ds-banner-hed {font-size: 1.3125rem;line-height: 3rem;}
+	.ds-banner .container{ position: relative; padding-bottom: 90px }
+	.ds-social{ position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+	.ds-banner figure{ width: 90%; margin: 0 auto; margin-top: 40px }
+	.ds-image-shadow {box-shadow:20px 20px #e4c22b;}
+	.ds-banner {margin-bottom: 3.5rem;}
+	.ds-resume-section,.ds-projects-section,.ds-testimonials-section,.ds-email-section{ padding: 3.5rem 0 }
+	.ds-resume-section h2,.ds-projects-section h2{ max-width: 100% }
+	.ds-projects-section h2 span{ margin-bottom: 0 }
+	.ds-projects-listing-section {margin-top: 3rem;}
+	.ds-projects-loop section{margin-top: 2.875rem;}
+	.ds-projects-loop figure{ margin-right: 20px }
+	.ds-projects-loop{margin-bottom: 3.5rem;}
+	.ds-projects-loop:last-child{ margin-bottom: 0 }
+	.ds-testimonials-loop article{ font-size:1rem; line-height: 2rem  }
+	.ds-email-section h2{ font-size: 2rem }
+	.ds-testimonials-slider .slick-arrow{width: 2.75rem;height: 2.75rem;line-height: 2.75rem;}
+}
+
+/*-----------------------------------------------------------------
+  8. >>> Navbar Style
+----------------------------------------------------------------*/
+
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000; /* Black background */
+	padding: 1rem 2rem;
+	position: fixed; /* Fixes the navbar to the top */
+	top: 0; /* Positions it at the top of the page */
+	width: 100%; /* Makes the navbar span the entire width */
+	z-index: 1000; /* Ensures the navbar stays above other elements */
+	
+}
+
+.nav-links a:hover {
+	color: #e4c22b;
+	
+}
+
+.navbar a {
+    text-decoration: none; /* Remove default underline */
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+.navbar a.active {
+	color: #e4c22b;
+	/* border-bottom: 3px solid blue; */
+}
+
+.navbar li {
+    position: relative;
+}
+
+
+.nav-links ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+
+	
+  }
+
+/* Highlight active section in navbar */
+.navbar a.active::after {
+	content: '';
+	display: block;
+	width: 50%; /* Adjust the width as needed */
+	height: 3px; /* Adjust the height as needed */
+	background-color: #e4c22b; /* Highlight color */
+	margin: 0 auto; /* Center the highlight */
+	margin-top: 5px; /* Space between text and highlight */
+	border-radius: 2px; /* Optional: rounded corners */
+}
+/* 
+.logo {
+color: #fff;
+font-size: 1.5rem;
+font-weight: bold;
+text-decoration: none;
+}
+   */
+.nav-links a {
+color: #fff;
+margin-left: 1.5rem;
+font-size: 1rem;
+padding: 1px 15px;
+display: block;
+text-decoration: none;
+}
+
+  
+
+
+
+.project-cotainer{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 3fr 1fr;
+	column-gap: 5px;
+	
+
+}
+
+
+
+
+.projects-list {
+	margin-bottom: 2rem; /* Adds space between each project item */
+	/* padding: 1rem; Optional, adds padding around the content of each item */
+	padding: 20px;
+  }
+  
+  /* Style for the headings inside the projects list */
+  .projects-list h3 {
+	margin-bottom: 1rem; /* Adds space between the heading and the text */
+	font-size: 1.5rem; /* Adjusts the size of the heading */
+  }
+  
+  /* Style for the text paragraph */
+  .projects-list p {
+	font-size: 1rem; /* Adjust the font size for the paragraph */
+	line-height: 1.6; /* Adjust line height for readability */
+	color: #555; /* Optional, adjust the text color */
+	/* height: 30px; */
+	width: 95%;
+  }
+
+  .project-cotainer img {
+	/* padding-right: 0px; */
+	height: 150px;
+	border-radius: 15px;
+
+
+	/* Optional, adjust the text color */
+  }
+  
+.read-more {
+	color: #ac8e08;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.ds-header{padding-bottom: 3.8125rem;}
+.ds-banner-hed{font-size: 1.3125rem;line-height: 4rem;}
+.ds-banner figure{ margin-right: 1.875rem }
+.ds-projects-section h2{ max-width: 60% }
+.ds-projects-loop figure{ margin-right: 40px }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.ds-banner figure{ margin-right: 1.875rem }
+
+}
+
+
+/* ------------------------------------------------------ */
+/* EXPERIENCE
+-------------------------------------------------------- */ 
+
+/* $primary-color: #FF6B6B;
+$primary-color-hover: scale-color($primary-color, $lightness: 32%); */
+.ds-experience-section {
+    color: #768390;
+    background: #2A2A2A;
+    /* font-family: "Effra", Helvetica, sans-serif; */
+	font-family: Poppins, sans-serif;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.ds-experience-section  div {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem; 
+
+}
+
+
+
+/* h1,h2,h3,h4,h5,h6  {
+    color: #3D4351;
+   
+	
+	margin-top: 0;
+} */
+
+
+
+.ds-experience-section a {
+    color: #FF6B6B;
+    &:hover {
+        color: scale-color(#dbaeae);
+        text-decoration: none;
+		
+    }
+}
+
+
+/* .example-header {
+    background: #3D4351;
+    color: #FFF;
+    font-weight: 300;
+    padding: 3em 1em;
+    text-align: center;
+    h1 {
+        color: #FFF;
+        font-weight: 300;
+        margin-bottom: 20px
+    }
+    p {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+} */
+
+
+.container-fluid {
+    .row {
+        padding: 0 0 4em 0;
+        &:nth-child(even) {
+            background: #F1F4F5;
+        }
+    }
+}
+
+
+
+
+.example-title {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 3em 0;
+    border-bottom: 1px solid #E4EAEC;
+    p {
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 400px;
+		color: #ffffff;
+    }
+}
+
+/*==================================
+    TIMELINE
+==================================*/
+
+    /*-- GENERAL STYLES
+------------------------------*/
+.timeline {
+	/* line-height: 1.4em; */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	h1, h2, h3, h4, h5, h6 {
+		line-height: inherit;
+		color: #ffffff;
+	}
+}
+
+/*----- TIMELINE ITEM -----*/
+
+.timeline-item {
+	padding-left: 40px;
+	position: relative;
+	
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+/*----- TIMELINE INFO -----*/
+
+.timeline-info {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 .5em 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+/*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 15px;
+	&:before {
+		background: #e4c22b;
+		border: 3px solid transparent;
+		border-radius: 100%;
+		content: "";
+		display: block;
+		height: 15px;
+		position: absolute;
+		top: 4px; left: 0;
+		width: 15px;
+		transition: background 0.3s ease-in-out,
+				border 0.3s ease-in-out;
+	}
+	&:after {
+		content: "";
+		width: 3px;
+		background: #CCD5DB;
+		display: block;
+		position: absolute;
+		top: 24px; bottom: 0; left: 6px;
+	}
+	.timeline-item:last-child &:after {
+		content: none;
+	}
+}
+
+
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+	background: transparent;
+	border: 3px solid #e4c22b;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.timeline-content {
+	padding-bottom: 40px;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.period {
+	padding: 0;
+	.timeline-info {
+		display: none;
+	}
+	.timeline-marker {
+		&:before {
+			background: transparent;
+			content: "";
+			width: 15px;
+			height: auto;
+			border: none;
+			border-radius: 0;
+			top: 0;
+			bottom: 30px;
+			position: absolute;
+			border-top: 3px solid #CCD5DB;
+			border-bottom: 3px solid #CCD5DB;
+		}
+		&:after {
+			content: "";
+			height: 32px;
+			top: auto;
+		}
+	}
+	.timeline-content {
+		padding: 40px 0 70px;
+	}
+	.timeline-title {
+		margin: 0;
+	}
+}
+
+/*----------------------------------------------
+	MOD: TIMELINE SPLIT
+----------------------------------------------*/
+
+	.timeline-split {
+		@media (min-width: 768px) {
+			.timeline {
+				display: table;
+			}
+			.timeline-item {
+				display: table-row;
+				padding: 0;
+			}
+			.timeline-info,
+			.timeline-marker,
+			.timeline-content,
+			.period .timeline-info {
+				display: table-cell;
+				vertical-align: top;
+			}
+			.timeline-marker {
+				position: relative;
+			}
+			.timeline-content {
+				padding-left: 30px;
+			}
+			.timeline-info {
+				padding-right: 30px;
+			}
+			.period .timeline-title {
+				position: relative;
+				left: -45px;
+			}
+		}
+	}
+
+/*----------------------------------------------
+	MOD: TIMELINE CENTERED
+----------------------------------------------*/
+
+	.timeline-centered {
+		@extend .timeline-split;
+		@media (min-width: 992px) {
+			&,
+			.timeline-item,
+			.timeline-info,
+			.timeline-marker,
+			.timeline-content {
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+			.timeline-item {
+				padding-bottom: 40px;
+				overflow: hidden;
+			}
+			.timeline-marker {
+				position: absolute;
+				left: 50%;
+				margin-left: -7.5px;
+			}
+			.timeline-info,
+			.timeline-content {
+				width: 50%;
+			}
+			> .timeline-item:nth-child(odd) .timeline-info {
+				float: left;
+				text-align: right;
+				padding-right: 30px;
+			}
+			> .timeline-item:nth-child(odd) .timeline-content {
+				float: right;
+				text-align: left;
+				padding-left: 30px;
+			}    
+			> .timeline-item:nth-child(even) .timeline-info {
+				float: right;
+				text-align: left;
+				padding-left: 30px;
+			}
+			> .timeline-item:nth-child(even) .timeline-content {
+				float: left;
+				text-align: right;
+				padding-right: 30px;
+			}
+			> .timeline-item.period .timeline-content {
+				float: none;
+				padding: 0;
+				width: 100%;
+				text-align: center;
+			}
+			.timeline-item.period {
+				padding: 50px 0 90px;
+			}
+			.period .timeline-marker:after {
+				height: 30px;
+				bottom: 0;
+				top: auto;
+			}
+			.period .timeline-title {
+				left: auto;
+			}
+		}
+	}
+
+/*----------------------------------------------
+	MOD: MARKER OUTLINE
+----------------------------------------------*/
+	
+	.marker-outline {
+		.timeline-marker {
+			&:before {
+				background: transparent;
+				border-color: #e4c22b;
+			}
+		}
+		.timeline-item:hover .timeline-marker:before {
+			background:#e4c22b;
+		}
+	}
